@@ -1,7 +1,7 @@
 import { USER_LOGIN_REQUEST , USER_LOGIN_SUCCESS , USER_LOGIN_FAIL , USER_LOGOUT} from "../Actions/Types";
 
 // login reducer
-export const LoginReducer = (state = {}, action) => {
+export const LoginR = (state = {}, action) => {
     switch (action.type) {
       case USER_LOGIN_REQUEST:
         return { loading: true };

@@ -1,5 +1,7 @@
 import {combineReducers} from 'redux'
-import {LoginReducer} from "./UserReducer"
+import {LoginR} from "./UserReducer"
+import {GetTodos} from "./TodosReducer"
 export const Reducers = combineReducers({
-    LoginReducer
+    LoginR ,
+    GetTodos
 })

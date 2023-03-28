@@ -4,6 +4,8 @@ import { Button, Container, Grid, TextField } from "@mui/material";
 import "./dashbord.css";
 import { Link } from "react-router-dom";
 import {AddNewTodo, DeleteTodo, GetTodos} from '../redux/Actions/TodosAction'
+import {Header} from '../component/Header'
+
 export const Products = () => {
    const todo = useSelector(state => state.TodoReducer)
    const [newToDo , setNewtodo] = useState("")
@@ -29,6 +31,7 @@ export const Products = () => {
 
   return (
     <div>
+      <Header />
       <Container maxWidth="md">
         <Grid md={2} xs={12} className="spacing" />
         <Grid md={8} xs={12}>

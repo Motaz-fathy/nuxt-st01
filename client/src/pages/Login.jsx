@@ -1,5 +1,6 @@
 import React, { useEffect }  from "react";
 import {useNavigate} from 'react-router-dom'
+import {Header} from '../component/Header'
 import "./login.css";
 import {
   Button,
@@ -18,7 +19,9 @@ export const Login = () => {
   const LoginR = useSelector(state => state.LoginR)
   const {user} = LoginR
   const safeUser = user?.find( user => user.username === name && user.password === password)
-  console.log(safeUser)
+  if(safeUser !== undefined ) {
+    localStorage.setItem("SafeUser", JSON.stringify(safeUser));
+  }
   const dispatch = useDispatch()
   const nav = useNavigate()
   const handleChangeName = event => {
@@ -31,7 +34,7 @@ export const Login = () => {
     event.preventDefault()
     
     if(safeUser) {
-      nav('/dashbord')
+      nav('/todos')
      }
      else {
       nav('/')

@@ -11,3 +11,16 @@
 .navinfo button {
     color: white;
 }
+.navinfo .on  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navinfo .on img {
+    width: 40px;
+    height: 40px;
+}
+.navinfo .on h3 {
+    color: white;
+    margin-right: 20px;
+}

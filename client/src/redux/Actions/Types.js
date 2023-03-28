@@ -2,6 +2,12 @@ export const USER_LOGIN_REQUEST = "USER_LOGIN_REQUEST";
 export const USER_LOGIN_SUCCESS = "USER_LOGIN_SUCCESS";
 export const USER_LOGIN_FAIL = "USER_LOGIN_FAIL";
 
+export const USER_GET_REQUEST = "USER_GET_REQUEST";
+export const USER_GET_SUCCESS = "USER_GET_SUCCESS";
+export const USER_GET_FAIL = "USER_GET_FAIL";
+
+
+
 export const TODOS_REQUEST = "TODOS_REQUEST";
 export const TODOS_SUCCESS = "TODOS_SUCCESS";
 export const TODOS_FAIL =  "TODOS_FAIL";

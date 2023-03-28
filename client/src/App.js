@@ -1,5 +1,4 @@
 import { Login } from "./pages/Login";
-import {Header} from './component/Header'
 import {  BrowserRouter as Router,  Routes,  Route } from 'react-router-dom';
 
 import { Dashbord } from "./pages/Dashbord";
@@ -9,7 +8,6 @@ function App() {
     <div>
       
      <Router>
-      <Header />
       <Routes>
         <Route path="/" exact element={<Login />}/>
         <Route path="/dashbord" exact element={<Dashbord />}/>

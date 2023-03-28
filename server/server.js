@@ -30,6 +30,7 @@ app.get('/todos', auth, (req, res) => {
 
 app.post('/todos', auth, (req, res) => {
     const user = res.locals.user
+    console.log(req.body.data)
     let newToDo = req.body;
     // get the biggest id and add 1 to it
     newToDo.id = Math.max(...toDos.map(toDo => toDo.id)) + 1;
